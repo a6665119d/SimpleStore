@@ -8,7 +8,7 @@ function initDataBase() {
 function initFGdb() {
 	fgDB.transaction(function(tx) {
         // 用户表
-		tx.executeSql('CREATE TABLE IF NOT EXISTS [user] (id VARCHAR2(32) PRIMARY KEY NOT NULL, name VARCHAR2(32), password VARCHAR2(32), [remark] VARCHAR2(32), [define] VARCHAR2(32))');
+		tx.executeSql('CREATE TABLE IF NOT EXISTS [user] (id VARCHAR2(32) PRIMARY KEY NOT NULL, name VARCHAR2(32), password VARCHAR2(32),phone VARCHAR2(32),  remark VARCHAR2(32), define VARCHAR2(32))');
 	}, function() {
         console.log('创建数据库成功!');
     }, function(err) {
