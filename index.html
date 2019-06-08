@@ -81,25 +81,101 @@
         </div>
     </div>
 </div>
-<!-- banner -->
-<div class='container' id="index-content">
-    <div class="banner row">
-        <ul class="nav">
-            <li v-for='cates in navCommoditys'>
-                <a href="">{{ cates.title }}</a>
-                <div class='pop'>
-                    <div class="nav-list" v-for='lists in cates.lists'>
-                        <a href="" v-for='commodity in lists.list'>
-                            <img :src="commodity.imgUrl" alt="">
-                            <span>{{ commodity.name }}</span>
-                        </a>
+<div id="index">
+    <!-- banner -->
+    <div class='container'>
+        <div class="banner row">
+            <ul class="nav">
+                <li v-for='cates in navCommoditys'>
+                    <a href="">{{ cates.title }}</a>
+                    <div class='pop'>
+                        <div class="nav-list" v-for='lists in cates.lists'>
+                            <a href="" v-for='commodity in lists.list'>
+                                <img :src="commodity.imgUrl" alt="">
+                                <span>{{ commodity.name }}</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- banner下的图片 -->
+        <div class="sub_banner row">
+            <div class="sidebar col-md-3">
+                <div class="sidebar-item"><a href="JavaScript:;;"><img src="./image/hjh_01.gif"></a></div>
+                <div class="sidebar-item"><a href="JavaScript:;;"><img src="./image/hjh_02.gif"></a></div>
+                <div class="sidebar-item"><a href="JavaScript:;;"><img src="./image/hjh_07.gif"></a></div>
+                <div class="sidebar-item"><a href="JavaScript:;;"><img src="./image/hjh_04.gif"></a></div>
+                <div class="sidebar-item"><a href="JavaScript:;;"><img src="./image/hjh_05.gif"></a></div>
+                <div class="sidebar-item"><a href="JavaScript:;;"><img src="./image/hjh_06.gif"></a></div>
+            </div>
+            <div class="col-md-3">
+                <a href="JavaScript:;;"><img src="./image/xiaomi8.jpg" alt=""></a>
+            </div>
+            <div class="col-md-3">
+                <a href="JavaScript:;;"><img src="./image/hongmi6.jpg" alt=""></a>
+            </div>
+            <div class="col-md-3">
+                <a href="JavaScript:;;"><img src="./image/kongqi.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="banner-bottom"></div>
+    </div>
+    <div class="page-main">
+        <div class="container">
+            <div v-for='cates in mainCommoditys'>
+                <div class="title">{{cates.title}}</div>
+                <div class="row">
+                    <div class="col" v-for='lists in cates.list1'>
+                        <div class='img-height' v-if='lists.type==1'>
+                            <a href="JavaScript:;;"><img :src="lists.imgUrl"></a>
+                        </div>
+                        <div v-if='lists.type==2'>
+                            <div class="commodity-item">
+                                <a href="">
+                                    <div><img :src="lists.imgUrl"></div>
+                                    <div class="name">{{lists.name}}</div>
+                                    <div class="dec">{{lists.dec}}</div>
+                                    <div class="price">{{lists.price}}元 </div>
+                                    <div class="comment">
+                                        <div>{{lists.comment}}</div>
+                                        <div class='from'>来至于 {{lists.commentator}} 的评价</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col" v-for='lists in cates.list2'>
+                        <div v-if='lists.type==1'>
+                            <a href="JavaScript:;;"><img src="./image/jiadian01.gif"></a>
+                        </div>
+                        <div v-if='lists.type==2'>
+                            <div class="commodity-item">
+                                <a href="">
+                                    <div><img :src="lists.imgUrl"></div>
+                                    <div class="name">{{lists.name}}</div>
+                                    <div class="dec">{{lists.dec}}</div>
+                                    <div class="price">{{lists.price}}元 </div>
+                                    <div class="comment">
+                                        <div>{{lists.comment}}</div>
+                                        <div class='from'>来至于 {{lists.commentator}} 的评价</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </li>
-        </ul>
+                <div class='main-img'><img :src="cates.bottomImg" alt=""></div>
+            </div>
+        </div>
     </div>
 </div>
-    <div>小米商城</div>
+<footer>
+    <div>小米商城|MIUI|米聊|多看书城|小米路由器|视频电话|小米天猫店|小米淘宝直营店|小米网盟|小米移动|隐私政策|Select Region</div>
+    <div>©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号</div>
+    <div>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</div>
+</footer>
 </body>
 </html>
 <script>
@@ -109,9 +185,10 @@
         createDefaultUser();
     };
     const index = new Vue({
-        el: '#index-content',
+        el: '#index',
         data: {
             navCommoditys: navCommoditys,
+            mainCommoditys: mainCommoditys,
         },
-    })
+    });
 </script>

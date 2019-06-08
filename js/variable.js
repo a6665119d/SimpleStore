@@ -9,7 +9,7 @@ var navCommoditys = [{
         // 第一列
         list: [{
             id: '10011',
-            name: '小米MIX 3',
+            name: '小米9',
             imgUrl: './image/mix3-80.gif',
             price: '3299',
         }, {
@@ -101,13 +101,13 @@ var navCommoditys = [{
         // 第一列
         list: [{
             id: '20011',
-            name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            name: '电视',
+            imgUrl: './image/qingchun-80.gif',
             price: '3299',
         }, {
             id: '20012',
             name: '小米8 青春版',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/xm5Splus.jpg',
             price: '2299',
         }, {
             id: '20013',
@@ -119,16 +119,6 @@ var navCommoditys = [{
             name: '小米8',
             imgUrl: './image/mi8-80.gif',
             price: '2899',
-        }, {
-            id: '20015',
-            name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
-        }, {
-            id: '20016',
-            name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
         }]
     }, {
         // 第二列
@@ -152,11 +142,6 @@ var navCommoditys = [{
             name: '黑鲨游戏手机',
             imgUrl: './image/qingchun-80.gif',
             price: '2899',
-        }, {
-            id: '20025',
-            name: '红米Note 7',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
         }]
     }, {
         // 第三列
@@ -180,11 +165,6 @@ var navCommoditys = [{
             name: '移动4G+专区',
             imgUrl: './image/mix3-80.gif',
             price: '2899',
-        }, {
-            id: '20035',
-            name: '对比手机',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
         }]
     }]
 }, {
@@ -211,11 +191,6 @@ var navCommoditys = [{
             name: '小米8',
             imgUrl: './image/mi8-80.gif',
             price: '2899',
-        }, {
-            id: '30015',
-            name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
         }, {
             id: '30016',
             name: '小米8 SE',
@@ -262,21 +237,6 @@ var navCommoditys = [{
             name: '红米6',
             imgUrl: './image/qingchun-80.gif',
             price: '2299',
-        }, {
-            id: '30033',
-            name: '红米Note 5',
-            imgUrl: './image/mi8-80.gif',
-            price: '2599',
-        }, {
-            id: '30034',
-            name: '移动4G+专区',
-            imgUrl: './image/mix3-80.gif',
-            price: '2899',
-        }, {
-            id: '30035',
-            name: '对比手机',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
         }]
     }]
 }, {
@@ -308,11 +268,6 @@ var navCommoditys = [{
             name: '小米8 SE',
             imgUrl: './image/qingchun-80.gif',
             price: '2299',
-        }, {
-            id: '40016',
-            name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
         }]
     }, {
         // 第二列
@@ -331,16 +286,6 @@ var navCommoditys = [{
             name: '黑鲨游戏手机Helo',
             imgUrl: './image/mix3-80.gif',
             price: '2599',
-        }, {
-            id: '40024',
-            name: '黑鲨游戏手机',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2899',
-        }, {
-            id: '40025',
-            name: '红米Note 7',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
         }]
     }, {
         // 第三列
@@ -428,11 +373,6 @@ var navCommoditys = [{
             name: '黑鲨游戏手机',
             imgUrl: './image/qingchun-80.gif',
             price: '2899',
-        }, {
-            id: '50025',
-            name: '红米Note 7',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
         }]
     }, {
         // 第三列
@@ -441,26 +381,6 @@ var navCommoditys = [{
             name: '红米6 Pro',
             imgUrl: './image/mix3-80.gif',
             price: '3299',
-        }, {
-            id: '50032',
-            name: '红米6',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
-        }, {
-            id: '50033',
-            name: '红米Note 5',
-            imgUrl: './image/mi8-80.gif',
-            price: '2599',
-        }, {
-            id: '50034',
-            name: '移动4G+专区',
-            imgUrl: './image/mix3-80.gif',
-            price: '2899',
-        }, {
-            id: '50035',
-            name: '对比手机',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
         }]
     }]
 }, {
@@ -533,26 +453,6 @@ var navCommoditys = [{
             name: '红米6 Pro',
             imgUrl: './image/mix3-80.gif',
             price: '3299',
-        }, {
-            id: '60032',
-            name: '红米6',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
-        }, {
-            id: '60033',
-            name: '红米Note 5',
-            imgUrl: './image/mi8-80.gif',
-            price: '2599',
-        }, {
-            id: '60034',
-            name: '移动4G+专区',
-            imgUrl: './image/mix3-80.gif',
-            price: '2899',
-        }, {
-            id: '60035',
-            name: '对比手机',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
         }]
     }]
 }, {
@@ -618,7 +518,7 @@ var navCommoditys = [{
             imgUrl: './image/qingchun-80.gif',
             price: '2299',
         }]
-    }, {
+    },/* {
         // 第三列
         list: [{
             id: '70031',
@@ -646,7 +546,7 @@ var navCommoditys = [{
             imgUrl: './image/qingchun-80.gif',
             price: '2299',
         }]
-    }]
+    }*/]
 }, {
     title: '健康 儿童',
     lists: [{
@@ -707,34 +607,6 @@ var navCommoditys = [{
         }, {
             id: '80025',
             name: '红米Note 7',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
-        }]
-    }, {
-        // 第三列
-        list: [{
-            id: '80031',
-            name: '红米6 Pro',
-            imgUrl: './image/mix3-80.gif',
-            price: '3299',
-        }, {
-            id: '80032',
-            name: '红米6',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
-        }, {
-            id: '80033',
-            name: '红米Note 5',
-            imgUrl: './image/mi8-80.gif',
-            price: '2599',
-        }, {
-            id: '80034',
-            name: '移动4G+专区',
-            imgUrl: './image/mix3-80.gif',
-            price: '2899',
-        }, {
-            id: '80035',
-            name: '对比手机',
             imgUrl: './image/qingchun-80.gif',
             price: '2299',
         }]
@@ -831,4 +703,86 @@ var navCommoditys = [{
             price: '2299',
         }]
     }]
+}];
+// 首页主要内容
+var mainCommoditys = [{
+    title: '手机',
+    bottomImg: './image/banner-bottom2.jpg',
+    list1: [{
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }, {
+        type: '2',
+        imgUrl: './image/jiadian02.gif',
+        name: '米家互联网空调',
+        dec: '1.5匹变频 / 高效制冷热',
+        price: '1999',
+        comment: '漂亮，和老婆一样漂亮',
+        commentator: '刘一祯',
+    }, {
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }, {
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }, {
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }],
+    list2: [{
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }, {
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }, {
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }, {
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }, {
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }],
+}, {
+    title: '家电',
+    bottomImg: './image/banner-bottom1.jpg',
+    list1: [{
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }, {
+        type: '2',
+        imgUrl: './image/jiadian02.gif',
+        name: '米家互联网空调',
+        dec: '1.5匹变频 / 高效制冷热',
+        price: '1999',
+        comment: '漂亮，和老婆一样漂亮',
+        commentator: '刘一祯',
+    }, {
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }, {
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }, {
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }],
+    list2: [{
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }, {
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }, {
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }, {
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }, {
+        type: '1',
+        imgUrl: './image/jiadian01.gif',
+    }],
 }]

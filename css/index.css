@@ -44,11 +44,13 @@
     padding-left: 0px;
     padding-right: 0px;
 }
+/* banner */
 .banner {
     background: url('../image/banner2.jpg') no-repeat center center;
     height: 460px;
     background-size: 100% 100%;
 }
+/* 轮播图的商品 */
 .nav {
     width: 234px;
     height: 460px;
@@ -97,4 +99,120 @@
     height: 72px;
     text-align: left;
     padding-left: 20px;
+}
+/* 轮播图下的图片 */
+.sub_banner{
+    margin: 20px 0;
+}
+.sub_banner .sidebar{
+    padding-left: 0px;
+}
+.sub_banner .sidebar .sidebar-item{
+    width: 78px;
+    height: 85px;
+    float: left;
+    marign: 0;
+    padding: 0;
+}
+.sub_banner .sidebar .sidebar-item a img{
+    opacity:0.8;
+}
+.sub_banner .sidebar .sidebar-item a img:hover{
+    opacity:1;
+}
+.sub_banner a{
+    width: 100%;
+    height: 100%;
+}
+.sub_banner a img{
+    width: 100%;
+    height: 100%;
+}
+.banner-bottom{
+    background: url('../image/banner-bottom.jpg') no-repeat center center;
+    height: 130px;
+    background-size: 100% 100%;
+}
+
+/* 首页主要内容 */
+.page-main{
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.page-main .title{
+    height: 58px;
+    line-height: 58px;
+    font-size: 22px;
+    text-align: left;
+}
+.page-main .row a{
+    width: 100%;
+    height: 100%;
+}
+.page-main .row a img{
+    width: 100%;
+    height: 100%;
+}
+.page-main .w-100{
+    height: 10px;
+}
+/* 商品列表 */
+.commodity-item{
+    background: #fff;
+}
+.commodity-item .name{
+    color: #333;
+}
+.commodity-item .dec{
+    margin: 0 10px 10px;
+    height: 18px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.commodity-item .price{
+    margin: 0 10px 10px;
+    text-align: center;
+    color: #ff6700;
+}
+.commodity-item .comment{
+    display: none;
+    position: absolute;
+    background: #ff6700;
+    font-size: 12px;
+    color: #fff;
+    width: 96%;
+    height: 60px;
+    padding: 10px;
+    opacity: 0.8;
+    webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.commodity-item .comment>div{
+    text-align: left;
+    width: 100%;
+    line-height: 16px;
+}
+.commodity-item:hover .comment{
+    display: block;
+    bottom: 0px;
+}
+.main-img{
+    width: 100%;
+    height: 120px;
+    margin-top: 30px;
+}
+.main-img img{
+    width: 100%;
+    height: 100%;;
+}
+.img-height{
+    height: 100%;
+}
+// 底部
+.page-bottom{
+    padding: 20px;
+    margin: 20px;
 }
