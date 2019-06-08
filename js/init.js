@@ -12,3 +12,14 @@ function createOnlyId() {
 function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+// 生成默认用户1001
+function createDefaultUser() {
+    var data = {
+        id: '999999999',
+        name: '1001',
+        password: '1001',
+    }
+    UserDao.replaceUser(data, function(success) {
+        if (success) console.log('保存成功');
+    })
+}

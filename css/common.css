@@ -1,0 +1,16 @@
+/* 公共样式 */
+ul li{
+    list-style: none;
+}
+a {
+    display: block;
+    text-decoration: none  !important;
+    cursor: pointer;
+}
+div{
+    text-align: center;
+}
+.col,.col-md-1,.col-md-2,.col-md-3{
+    padding-right: 5px;
+    padding-left: 5px;
+}

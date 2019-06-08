@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
     <script src="js/variable.js"></script>
     <script src="js/dbInit.js"></script>
     <script src="js/init.js"></script>
@@ -11,6 +16,69 @@
     <title>小米商城</title>
 </head>
 <body onload="init()">
+<div class="header">
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="row">
+            <!-- 左边列表 -->
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col col-md-1"><a href="./index.html">小米商城</a></div>
+                    <div class="col col-md-1"><a href="JavaScript:;;">MIUI</a></div>
+                    <div class="col col-md-1"><a href="JavaScript:;;">loT</a></div>
+                    <div class="col col-md-1"><a href="JavaScript:;;">云服务</a></div>
+                    <div class="col col-md-1"><a href="JavaScript:;;">金融</a></div>
+                    <div class="col col-md-1"><a href="JavaScript:;;">有品</a></div>
+                    <div class="col col-md-1"><a href="JavaScript:;;">开放平台</a></div>
+                    <div class="col col-md-1"><a href="JavaScript:;;">政企服务</a></div>
+                    <div class="col col-md-1"><a href="JavaScript:;;">资质证照</a></div>
+                    <div class="col col-md-1"><a href="JavaScript:;;">协议规则</a></div>
+                    <div class="col col-md-1"><a href="JavaScript:;;">下载app</a></div>
+                    <div class="col col-md-1"><a href="JavaScript:;;">地区</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 header-right">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2"><a href="">登录</a></div>
+                    <div class="col-md-2"><a href="JavaScript:;;">注册</a></div>
+                    <div class="col-md-3"><a href="JavaScript:;;">消息通知</a></div>
+                    <div class="col-md-3"><a href="JavaScript:;;">购物车</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container search">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col col-md-1"><a href="./index.html"><div class="logo"></div></a></div>
+                <div class="col col-md-1"><a href="JavaScript:;;">小米手机</a></div>
+                <div class="col col-md-1"><a href="JavaScript:;;">红米</a></div>
+                <div class="col col-md-1"><a href="JavaScript:;;">电视</a></div>
+                <div class="col col-md-1"><a href="JavaScript:;;">笔记本</a></div>
+                <div class="col col-md-1"><a href="JavaScript:;;">家电</a></div>
+                <div class="col col-md-1"><a href="JavaScript:;;">新品</a></div>
+                <div class="col col-md-1"><a href="JavaScript:;;">路由器</a></div>
+                <div class="col col-md-1"><a href="JavaScript:;;">智能硬件</a></div>
+                <div class="col col-md-1"><a href="JavaScript:;;">服务</a></div>
+                <div class="col col-md-1"><a href="JavaScript:;;">社区</a></div>
+                <div class="col col-md-1"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col col-md-9">
+                    <input type="text" placeholder="小米8&nbsp;小米MIX 2S">
+                </div>
+                <div class="col col-md-3">
+                    <input type="submit" class="sousuo" value="搜索"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <div>小米商城</div>
 </body>
 </html>
@@ -18,16 +86,6 @@
     // 初始化
     function init(){
         initDataBase(); // 生成数据库
+        createDefaultUser();
     };
-    // 生成默认用户1001
-    function createDefaultUser(){
-        var data ={
-            id: createOnlyId(),
-            name: '1001',
-            password: '1001',
-        }
-        UserDao.replaceUser(data,function(success){
-            if(success) console.log('保存成功');
-        })
-    }
 </script>
