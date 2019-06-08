@@ -44,3 +44,57 @@
     padding-left: 0px;
     padding-right: 0px;
 }
+.banner {
+    background: url('../image/banner2.jpg') no-repeat center center;
+    height: 460px;
+    background-size: 100% 100%;
+}
+.nav {
+    width: 234px;
+    height: 460px;
+    background: rgba(0,0,0,0.4);
+    padding: 20px 0;
+    position: relative;
+}
+.nav li{
+    height: 40px;
+}
+.nav li>a{
+    display: block;
+    width: 234px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 30px;
+    color: #fff;
+    text-align: left;
+}
+.nav li>a:hover{
+    background: #ff6700;
+}
+.nav li .pop{
+    width: 800px;
+    height: 460px;
+    background: #fff;
+    position: absolute;
+    left: 234px;
+    top: 0px;
+    display: none;
+}
+.nav li:hover .pop{
+    display: block;
+}
+.nav li .pop .nav-list{
+    width: 265px;
+    float: left;
+}
+.nav li .pop .nav-list span{
+    margin-left: 10px;
+    color: #111;
+    line-height: 72px;
+}
+.nav li .pop .nav-list a{
+    height: 72px;
+    text-align: left;
+    padding-left: 20px;
+}
