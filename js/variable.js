@@ -10,32 +10,32 @@ var navCommoditys = [{
         list: [{
             id: '10011',
             name: '小米9',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-111.png',
             price: '3299',
         }, {
             id: '10012',
-            name: '小米8 青春版',
-            imgUrl: './image/qingchun-80.gif',
+            name: '小米MIX 3',
+            imgUrl: './image/nav-80-112.png',
             price: '2299',
         }, {
             id: '10013',
             name: '小米8 屏幕指纹版',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-113.png',
             price: '2599',
         }, {
             id: '10014',
             name: '小米8',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-114.png',
             price: '2899',
         }, {
             id: '10015',
             name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-115.png',
             price: '2299',
         }, {
             id: '10016',
-            name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
+            name: '小米8 青春版',
+            imgUrl: './image/nav-80-116.png',
             price: '2299',
         }]
     }, {
@@ -43,27 +43,27 @@ var navCommoditys = [{
         list: [{
             id: '10021',
             name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-121.png',
             price: '3299',
         }, {
             id: '10022',
             name: '小米6X',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-122.png',
             price: '2299',
         }, {
             id: '10023',
             name: '黑鲨游戏手机Helo',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-123.png',
             price: '2599',
         }, {
             id: '10024',
             name: '黑鲨游戏手机',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-124.png',
             price: '2899',
         }, {
             id: '10025',
             name: '红米Note 7',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-125.png',
             price: '2299',
         }]
     }, {
@@ -71,27 +71,12 @@ var navCommoditys = [{
         list: [{
             id: '10031',
             name: '红米6 Pro',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-131.png',
             price: '3299',
         }, {
             id: '10032',
             name: '红米6',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
-        }, {
-            id: '10033',
-            name: '红米Note 5',
-            imgUrl: './image/mi8-80.gif',
-            price: '2599',
-        }, {
-            id: '10034',
-            name: '移动4G+专区',
-            imgUrl: './image/mix3-80.gif',
-            price: '2899',
-        }, {
-            id: '10035',
-            name: '对比手机',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-132.png',
             price: '2299',
         }]
     }]
@@ -102,22 +87,22 @@ var navCommoditys = [{
         list: [{
             id: '20011',
             name: '电视',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-211.jpg',
             price: '3299',
         }, {
             id: '20012',
             name: '小米8 青春版',
-            imgUrl: './image/xm5Splus.jpg',
+            imgUrl: './image/nav-80-212.jpg',
             price: '2299',
         }, {
             id: '20013',
             name: '小米8 屏幕指纹版',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-213.jpg',
             price: '2599',
         }, {
             id: '20014',
             name: '小米8',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-214.jpg',
             price: '2899',
         }]
     }, {
@@ -125,46 +110,31 @@ var navCommoditys = [{
         list: [{
             id: '20021',
             name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-221.jpg',
             price: '3299',
         }, {
             id: '20022',
             name: '小米6X',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-222.jpg',
             price: '2299',
         }, {
             id: '20023',
             name: '黑鲨游戏手机Helo',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-223.jpg',
             price: '2599',
-        }, {
-            id: '20024',
-            name: '黑鲨游戏手机',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2899',
         }]
     }, {
         // 第三列
         list: [{
             id: '20031',
             name: '红米6 Pro',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-231.jpg',
             price: '3299',
         }, {
             id: '20032',
             name: '红米6',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-232.jpg',
             price: '2299',
-        }, {
-            id: '20033',
-            name: '红米Note 5',
-            imgUrl: './image/mi8-80.gif',
-            price: '2599',
-        }, {
-            id: '20034',
-            name: '移动4G+专区',
-            imgUrl: './image/mix3-80.gif',
-            price: '2899',
         }]
     }]
 }, {
@@ -173,69 +143,74 @@ var navCommoditys = [{
         // 第一列
         list: [{
             id: '10011',
-            name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            name: '小米9',
+            imgUrl: './image/nav-80-111.png',
             price: '3299',
         }, {
             id: '10012',
-            name: '小米8 青春版',
-            imgUrl: './image/qingchun-80.gif',
+            name: '小米MIX 3',
+            imgUrl: './image/nav-80-112.png',
             price: '2299',
         }, {
             id: '10013',
             name: '小米8 屏幕指纹版',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-113.png',
             price: '2599',
         }, {
             id: '10014',
             name: '小米8',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-114.png',
             price: '2899',
         }, {
-            id: '30016',
+            id: '10015',
             name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-115.png',
+            price: '2299',
+        }, {
+            id: '10016',
+            name: '小米8 青春版',
+            imgUrl: './image/nav-80-116.png',
             price: '2299',
         }]
     }, {
         // 第二列
         list: [{
-            id: '30021',
+            id: '10021',
             name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-121.png',
             price: '3299',
         }, {
-            id: '30022',
+            id: '10022',
             name: '小米6X',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-122.png',
             price: '2299',
         }, {
-            id: '30023',
+            id: '10023',
             name: '黑鲨游戏手机Helo',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-123.png',
             price: '2599',
         }, {
-            id: '30024',
+            id: '10024',
             name: '黑鲨游戏手机',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-124.png',
             price: '2899',
         }, {
-            id: '30025',
+            id: '10025',
             name: '红米Note 7',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-125.png',
             price: '2299',
         }]
     }, {
         // 第三列
         list: [{
-            id: '30031',
+            id: '10031',
             name: '红米6 Pro',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-131.png',
             price: '3299',
         }, {
-            id: '30032',
+            id: '10032',
             name: '红米6',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-132.png',
             price: '2299',
         }]
     }]
@@ -244,75 +219,75 @@ var navCommoditys = [{
     lists: [{
         // 第一列
         list: [{
-            id: '40011',
-            name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            id: '10011',
+            name: '小米9',
+            imgUrl: './image/nav-80-111.png',
             price: '3299',
         }, {
-            id: '40012',
-            name: '小米8 青春版',
-            imgUrl: './image/qingchun-80.gif',
+            id: '10012',
+            name: '小米MIX 3',
+            imgUrl: './image/nav-80-112.png',
             price: '2299',
         }, {
-            id: '40013',
+            id: '10013',
             name: '小米8 屏幕指纹版',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-113.png',
             price: '2599',
         }, {
-            id: '40014',
+            id: '10014',
             name: '小米8',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-114.png',
             price: '2899',
         }, {
-            id: '40015',
+            id: '10015',
             name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-115.png',
+            price: '2299',
+        }, {
+            id: '10016',
+            name: '小米8 青春版',
+            imgUrl: './image/nav-80-116.png',
             price: '2299',
         }]
     }, {
         // 第二列
         list: [{
-            id: '40021',
+            id: '10021',
             name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-121.png',
             price: '3299',
         }, {
-            id: '40022',
+            id: '10022',
             name: '小米6X',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-122.png',
             price: '2299',
         }, {
-            id: '40023',
+            id: '10023',
             name: '黑鲨游戏手机Helo',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-123.png',
             price: '2599',
+        }, {
+            id: '10024',
+            name: '黑鲨游戏手机',
+            imgUrl: './image/nav-80-124.png',
+            price: '2899',
+        }, {
+            id: '10025',
+            name: '红米Note 7',
+            imgUrl: './image/nav-80-125.png',
+            price: '2299',
         }]
     }, {
         // 第三列
         list: [{
-            id: '40031',
+            id: '10031',
             name: '红米6 Pro',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-131.png',
             price: '3299',
         }, {
-            id: '40032',
+            id: '10032',
             name: '红米6',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
-        }, {
-            id: '40033',
-            name: '红米Note 5',
-            imgUrl: './image/mi8-80.gif',
-            price: '2599',
-        }, {
-            id: '40034',
-            name: '移动4G+专区',
-            imgUrl: './image/mix3-80.gif',
-            price: '2899',
-        }, {
-            id: '40035',
-            name: '对比手机',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-132.png',
             price: '2299',
         }]
     }]
@@ -321,66 +296,76 @@ var navCommoditys = [{
     lists: [{
         // 第一列
         list: [{
-            id: '50011',
-            name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            id: '10011',
+            name: '小米9',
+            imgUrl: './image/nav-80-111.png',
             price: '3299',
         }, {
-            id: '50012',
-            name: '小米8 青春版',
-            imgUrl: './image/qingchun-80.gif',
+            id: '10012',
+            name: '小米MIX 3',
+            imgUrl: './image/nav-80-112.png',
             price: '2299',
         }, {
-            id: '50013',
+            id: '10013',
             name: '小米8 屏幕指纹版',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-113.png',
             price: '2599',
         }, {
-            id: '50014',
+            id: '10014',
             name: '小米8',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-114.png',
             price: '2899',
         }, {
-            id: '50015',
+            id: '10015',
             name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-115.png',
             price: '2299',
         }, {
-            id: '50016',
-            name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
+            id: '10016',
+            name: '小米8 青春版',
+            imgUrl: './image/nav-80-116.png',
             price: '2299',
         }]
     }, {
         // 第二列
         list: [{
-            id: '50021',
+            id: '10021',
             name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-121.png',
             price: '3299',
         }, {
-            id: '50022',
+            id: '10022',
             name: '小米6X',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-122.png',
             price: '2299',
         }, {
-            id: '50023',
+            id: '10023',
             name: '黑鲨游戏手机Helo',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-123.png',
             price: '2599',
         }, {
-            id: '50024',
+            id: '10024',
             name: '黑鲨游戏手机',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-124.png',
             price: '2899',
+        }, {
+            id: '10025',
+            name: '红米Note 7',
+            imgUrl: './image/nav-80-125.png',
+            price: '2299',
         }]
     }, {
         // 第三列
         list: [{
-            id: '50031',
+            id: '10031',
             name: '红米6 Pro',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-131.png',
             price: '3299',
+        }, {
+            id: '10032',
+            name: '红米6',
+            imgUrl: './image/nav-80-132.png',
+            price: '2299',
         }]
     }]
 }, {
@@ -388,71 +373,76 @@ var navCommoditys = [{
     lists: [{
         // 第一列
         list: [{
-            id: '60011',
-            name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            id: '10011',
+            name: '小米9',
+            imgUrl: './image/nav-80-111.png',
             price: '3299',
         }, {
-            id: '60012',
-            name: '小米8 青春版',
-            imgUrl: './image/qingchun-80.gif',
+            id: '10012',
+            name: '小米MIX 3',
+            imgUrl: './image/nav-80-112.png',
             price: '2299',
         }, {
-            id: '60013',
+            id: '10013',
             name: '小米8 屏幕指纹版',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-113.png',
             price: '2599',
         }, {
-            id: '60014',
+            id: '10014',
             name: '小米8',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-114.png',
             price: '2899',
         }, {
-            id: '60015',
+            id: '10015',
             name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-115.png',
             price: '2299',
         }, {
-            id: '60016',
-            name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
+            id: '10016',
+            name: '小米8 青春版',
+            imgUrl: './image/nav-80-116.png',
             price: '2299',
         }]
     }, {
         // 第二列
         list: [{
-            id: '60021',
+            id: '10021',
             name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-121.png',
             price: '3299',
         }, {
-            id: '60022',
+            id: '10022',
             name: '小米6X',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-122.png',
             price: '2299',
         }, {
-            id: '60023',
+            id: '10023',
             name: '黑鲨游戏手机Helo',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-123.png',
             price: '2599',
         }, {
-            id: '60024',
+            id: '10024',
             name: '黑鲨游戏手机',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-124.png',
             price: '2899',
         }, {
-            id: '60025',
+            id: '10025',
             name: '红米Note 7',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-125.png',
             price: '2299',
         }]
     }, {
         // 第三列
         list: [{
-            id: '60031',
+            id: '10031',
             name: '红米6 Pro',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-131.png',
             price: '3299',
+        }, {
+            id: '10032',
+            name: '红米6',
+            imgUrl: './image/nav-80-132.png',
+            price: '2299',
         }]
     }]
 }, {
@@ -460,154 +450,152 @@ var navCommoditys = [{
     lists: [{
         // 第一列
         list: [{
-            id: '70011',
-            name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            id: '10011',
+            name: '小米9',
+            imgUrl: './image/nav-80-111.png',
             price: '3299',
         }, {
-            id: '70012',
-            name: '小米8 青春版',
-            imgUrl: './image/qingchun-80.gif',
+            id: '10012',
+            name: '小米MIX 3',
+            imgUrl: './image/nav-80-112.png',
             price: '2299',
         }, {
-            id: '70013',
+            id: '10013',
             name: '小米8 屏幕指纹版',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-113.png',
             price: '2599',
         }, {
-            id: '70014',
+            id: '10014',
             name: '小米8',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-114.png',
             price: '2899',
         }, {
-            id: '70015',
+            id: '10015',
             name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-115.png',
             price: '2299',
         }, {
-            id: '70016',
-            name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
+            id: '10016',
+            name: '小米8 青春版',
+            imgUrl: './image/nav-80-116.png',
             price: '2299',
         }]
     }, {
         // 第二列
         list: [{
-            id: '70021',
+            id: '10021',
             name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-121.png',
             price: '3299',
         }, {
-            id: '70022',
+            id: '10022',
             name: '小米6X',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-122.png',
             price: '2299',
         }, {
-            id: '70023',
+            id: '10023',
             name: '黑鲨游戏手机Helo',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-123.png',
             price: '2599',
         }, {
-            id: '70024',
+            id: '10024',
             name: '黑鲨游戏手机',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-124.png',
             price: '2899',
         }, {
-            id: '70025',
+            id: '10025',
             name: '红米Note 7',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-125.png',
             price: '2299',
         }]
-    },/* {
+    }, {
         // 第三列
         list: [{
-            id: '70031',
+            id: '10031',
             name: '红米6 Pro',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-131.png',
             price: '3299',
         }, {
-            id: '70032',
+            id: '10032',
             name: '红米6',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
-        }, {
-            id: '70033',
-            name: '红米Note 5',
-            imgUrl: './image/mi8-80.gif',
-            price: '2599',
-        }, {
-            id: '70034',
-            name: '移动4G+专区',
-            imgUrl: './image/mix3-80.gif',
-            price: '2899',
-        }, {
-            id: '70035',
-            name: '对比手机',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-132.png',
             price: '2299',
         }]
-    }*/]
+    }]
 }, {
     title: '健康 儿童',
     lists: [{
         // 第一列
         list: [{
-            id: '80011',
-            name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            id: '10011',
+            name: '小米9',
+            imgUrl: './image/nav-80-111.png',
             price: '3299',
         }, {
-            id: '80012',
-            name: '小米8 青春版',
-            imgUrl: './image/qingchun-80.gif',
+            id: '10012',
+            name: '小米MIX 3',
+            imgUrl: './image/nav-80-112.png',
             price: '2299',
         }, {
-            id: '80013',
+            id: '10013',
             name: '小米8 屏幕指纹版',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-113.png',
             price: '2599',
         }, {
-            id: '80014',
+            id: '10014',
             name: '小米8',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-114.png',
             price: '2899',
         }, {
-            id: '80015',
+            id: '10015',
             name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-115.png',
             price: '2299',
         }, {
-            id: '80016',
-            name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
+            id: '10016',
+            name: '小米8 青春版',
+            imgUrl: './image/nav-80-116.png',
             price: '2299',
         }]
     }, {
         // 第二列
         list: [{
-            id: '80021',
+            id: '10021',
             name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-121.png',
             price: '3299',
         }, {
-            id: '80022',
+            id: '10022',
             name: '小米6X',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-122.png',
             price: '2299',
         }, {
-            id: '80023',
+            id: '10023',
             name: '黑鲨游戏手机Helo',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-123.png',
             price: '2599',
         }, {
-            id: '80024',
+            id: '10024',
             name: '黑鲨游戏手机',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-124.png',
             price: '2899',
         }, {
-            id: '80025',
+            id: '10025',
             name: '红米Note 7',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-125.png',
+            price: '2299',
+        }]
+    }, {
+        // 第三列
+        list: [{
+            id: '10031',
+            name: '红米6 Pro',
+            imgUrl: './image/nav-80-131.png',
+            price: '3299',
+        }, {
+            id: '10032',
+            name: '红米6',
+            imgUrl: './image/nav-80-132.png',
             price: '2299',
         }]
     }]
@@ -616,90 +604,75 @@ var navCommoditys = [{
     lists: [{
         // 第一列
         list: [{
-            id: '90011',
-            name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            id: '10011',
+            name: '小米9',
+            imgUrl: './image/nav-80-111.png',
             price: '3299',
         }, {
-            id: '90012',
-            name: '小米8 青春版',
-            imgUrl: './image/qingchun-80.gif',
+            id: '10012',
+            name: '小米MIX 3',
+            imgUrl: './image/nav-80-112.png',
             price: '2299',
         }, {
-            id: '90013',
+            id: '10013',
             name: '小米8 屏幕指纹版',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-113.png',
             price: '2599',
         }, {
-            id: '90014',
+            id: '10014',
             name: '小米8',
-            imgUrl: './image/mi8-80.gif',
+            imgUrl: './image/nav-80-114.png',
             price: '2899',
         }, {
-            id: '90015',
+            id: '10015',
             name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-115.png',
             price: '2299',
         }, {
             id: '10016',
-            name: '小米8 SE',
-            imgUrl: './image/qingchun-80.gif',
+            name: '小米8 青春版',
+            imgUrl: './image/nav-80-116.png',
             price: '2299',
         }]
     }, {
         // 第二列
         list: [{
-            id: '90021',
+            id: '10021',
             name: '小米MIX 3',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-121.png',
             price: '3299',
         }, {
-            id: '90022',
+            id: '10022',
             name: '小米6X',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-122.png',
             price: '2299',
         }, {
-            id: '90023',
+            id: '10023',
             name: '黑鲨游戏手机Helo',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-123.png',
             price: '2599',
         }, {
-            id: '90024',
+            id: '10024',
             name: '黑鲨游戏手机',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-124.png',
             price: '2899',
         }, {
-            id: '90025',
+            id: '10025',
             name: '红米Note 7',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-125.png',
             price: '2299',
         }]
     }, {
         // 第三列
         list: [{
-            id: '90031',
+            id: '10031',
             name: '红米6 Pro',
-            imgUrl: './image/mix3-80.gif',
+            imgUrl: './image/nav-80-131.png',
             price: '3299',
         }, {
-            id: '90032',
+            id: '10032',
             name: '红米6',
-            imgUrl: './image/qingchun-80.gif',
-            price: '2299',
-        }, {
-            id: '90033',
-            name: '红米Note 5',
-            imgUrl: './image/mi8-80.gif',
-            price: '2599',
-        }, {
-            id: '90034',
-            name: '移动4G+专区',
-            imgUrl: './image/mix3-80.gif',
-            price: '2899',
-        }, {
-            id: '90035',
-            name: '对比手机',
-            imgUrl: './image/qingchun-80.gif',
+            imgUrl: './image/nav-80-132.png',
             price: '2299',
         }]
     }]
