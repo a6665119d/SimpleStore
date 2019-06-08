@@ -106,7 +106,7 @@
     height: 100%;
 }
 .nav li .pop .nav-list a img{
-    width: 20%;
+    width: 18%;
 }
 /* 轮播图下的图片 */
 .sub_banner{
@@ -164,12 +164,18 @@
     width: 100%;
     height: 100%;
 }
+.page-main .row .commodity-item a img{
+    width: 80%;
+    height: 80%;
+    margin-top: 20px;
+}
 .page-main .w-100{
     height: 10px;
 }
 /* 商品列表 */
 .commodity-item{
     background: #fff;
+    height: 100%;
 }
 .commodity-item .name{
     color: #333;

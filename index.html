@@ -130,7 +130,7 @@
                         <div class='img-height' v-if='lists.type==1'>
                             <a href="JavaScript:;;"><img :src="lists.imgUrl"></a>
                         </div>
-                        <div v-if='lists.type==2'>
+                        <div v-if='lists.type==2' class="height-100">
                             <div class="commodity-item">
                                 <a href="">
                                     <div><img :src="lists.imgUrl"></div>
@@ -148,7 +148,7 @@
                     <div class="w-100"></div>
                     <div class="col" v-for='lists in cates.list2'>
                         <div v-if='lists.type==1'>
-                            <a href="JavaScript:;;"><img src="./image/jiadian01.gif"></a>
+                            <a href="JavaScript:;;"><img :src="lists.imgUrl"></a>
                         </div>
                         <div v-if='lists.type==2'>
                             <div class="commodity-item">
