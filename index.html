@@ -1,182 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/common.css" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/vue.js"></script>
-    <script src="js/variable.js"></script>
-    <script src="js/dbInit.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/dao.js"></script>
-    <title>小米商城</title>
-</head>
-<body onload="init()">
-<!-- 导航栏 -->
-<div class="header">
-    <div class="container">
-        <div class="row">
-            <!-- 左边列表 -->
-            <div class="col-md-8">
+    <head>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <meta content="ie=edge" http-equiv="X-UA-Compatible">
+                    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+                    <link href="css/common.css" rel="stylesheet" type="text/css"/>
+                    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+                    <script src="js/jquery.min.js">
+                    </script>
+                    <script src="js/bootstrap.bundle.js">
+                    </script>
+                    <script src="js/vue.js">
+                    </script>
+                    <script src="js/variable.js">
+                    </script>
+                    <script src="js/dbInit.js">
+                    </script>
+                    <script src="js/init.js">
+                    </script>
+                    <script src="js/dao.js">
+                    </script>
+                    <title>
+                        小米商城
+                    </title>
+                </meta>
+            </meta>
+        </meta>
+    </head>
+    <body onload="init()">
+        <!-- 导航栏 -->
+        <div class="header">
+            <div class="container">
                 <div class="row">
-                    <div class="col col-md-1"><a href="./index.html">小米商城</a></div>
-                    <div class="col col-md-1"><a href="JavaScript:;;">MIUI</a></div>
-                    <div class="col col-md-1"><a href="JavaScript:;;">loT</a></div>
-                    <div class="col col-md-1"><a href="JavaScript:;;">云服务</a></div>
-                    <div class="col col-md-1"><a href="JavaScript:;;">金融</a></div>
-                    <div class="col col-md-1"><a href="JavaScript:;;">有品</a></div>
-                    <div class="col col-md-1"><a href="JavaScript:;;">开放平台</a></div>
-                    <div class="col col-md-1"><a href="JavaScript:;;">政企服务</a></div>
-                    <div class="col col-md-1"><a href="JavaScript:;;">资质证照</a></div>
-                    <div class="col col-md-1"><a href="JavaScript:;;">协议规则</a></div>
-                    <div class="col col-md-1"><a href="JavaScript:;;">下载app</a></div>
-                    <div class="col col-md-1"><a href="JavaScript:;;">地区</a></div>
-                </div>
-            </div>
-            <div class="col-md-4 header-right">
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-2"><a href="">登录</a></div>
-                    <div class="col-md-2"><a href="JavaScript:;;">注册</a></div>
-                    <div class="col-md-3"><a href="JavaScript:;;">消息通知</a></div>
-                    <div class="col-md-3"><a href="JavaScript:;;">购物车</a></div>
+                    <!-- 左边列表 -->
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col col-md-1">
+                                <a href="./index.html">
+                                    小米商城
+                                </a>
+                            </div>
+                            <div class="col col-md-1">
+                                <a href="JavaScript:;;">
+                                    MIUI
+                                </a>
+                            </div>
+                            <div class="col col-md-1">
+                                <a href="JavaScript:;;">
+                                    loT
+                                </a>
+                            </div>
+                            <div class="col col-md-1">
+                                <a href="JavaScript:;;">
+                                    云服务
+                                </a>
+                            </div>
+                            <div class="col col-md-1">
+                                <a href="JavaScript:;;">
+                                    金融
+                                </a>
+                            </div>
+                            <div class="col col-md-1">
+                                <a href="JavaScript:;;">
+                                    有品
+                                </a>
+                            </div>
+                            <div class="col col-md-1">
+                                <a href="JavaScript:;;">
+                                    开放平台
+                                </a>
+                            </div>
+                            <div class="col col-md-1">
+                                <a href="JavaScript:;;">
+                                    政企服务
+                                </a>
+                            </div>
+                            <div class="col col-md-1">
+                                <a href="JavaScript:;;">
+                                    资质证照
+                                </a>
+                            </div>
+                            <div class="col col-md-1">
+                                <a href="JavaScript:;;">
+                                    协议规则
+                                </a>
+                            </div>
+                            <div class="col col-md-1">
+                                <a href="JavaScript:;;">
+                                    下载app
+                                </a>
+                            </div>
+                            <div class="col col-md-1">
+                                <a href="JavaScript:;;">
+                                    地区
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 header-right">
+                        <div class="row">
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-2">
+                                <a href="">
+                                    登录
+                                </a>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="JavaScript:;;">
+                                    注册
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="JavaScript:;;">
+                                    消息通知
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="JavaScript:;;">
+                                    购物车
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- 搜索栏 -->
-<div class="container search">
-    <div class="row">
-        <div class="col-md-9">
+        <!-- 搜索栏 -->
+        <div class="container search">
             <div class="row">
-                <div class="col col-md-1"><a href="./index.html"><div class="logo"></div></a></div>
-                <div class="col col-md-1"><a href="JavaScript:;;">小米手机</a></div>
-                <div class="col col-md-1"><a href="JavaScript:;;">红米</a></div>
-                <div class="col col-md-1"><a href="JavaScript:;;">电视</a></div>
-                <div class="col col-md-1"><a href="JavaScript:;;">笔记本</a></div>
-                <div class="col col-md-1"><a href="JavaScript:;;">家电</a></div>
-                <div class="col col-md-1"><a href="JavaScript:;;">新品</a></div>
-                <div class="col col-md-1"><a href="JavaScript:;;">路由器</a></div>
-                <div class="col col-md-1"><a href="JavaScript:;;">智能硬件</a></div>
-                <div class="col col-md-1"><a href="JavaScript:;;">服务</a></div>
-                <div class="col col-md-1"><a href="JavaScript:;;">社区</a></div>
-                <div class="col col-md-1"></div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col col-md-1">
+                            <a href="./index.html">
+                                <div class="logo">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-md-1">
+                            <a href="JavaScript:;;">
+                                小米手机
+                            </a>
+                        </div>
+                        <div class="col col-md-1">
+                            <a href="JavaScript:;;">
+                                红米
+                            </a>
+                        </div>
+                        <div class="col col-md-1">
+                            <a href="JavaScript:;;">
+                                电视
+                            </a>
+                        </div>
+                        <div class="col col-md-1">
+                            <a href="JavaScript:;;">
+                                笔记本
+                            </a>
+                        </div>
+                        <div class="col col-md-1">
+                            <a href="JavaScript:;;">
+                                家电
+                            </a>
+                        </div>
+                        <div class="col col-md-1">
+                            <a href="JavaScript:;;">
+                                新品
+                            </a>
+                        </div>
+                        <div class="col col-md-1">
+                            <a href="JavaScript:;;">
+                                路由器
+                            </a>
+                        </div>
+                        <div class="col col-md-1">
+                            <a href="JavaScript:;;">
+                                智能硬件
+                            </a>
+                        </div>
+                        <div class="col col-md-1">
+                            <a href="JavaScript:;;">
+                                服务
+                            </a>
+                        </div>
+                        <div class="col col-md-1">
+                            <a href="JavaScript:;;">
+                                社区
+                            </a>
+                        </div>
+                        <div class="col col-md-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col col-md-9">
+                            <input placeholder="小米8 小米MIX 2S" type="text">
+                            </input>
+                        </div>
+                        <div class="col col-md-3">
+                            <input class="sousuo" type="submit" value="搜索"/>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="row">
-                <div class="col col-md-9">
-                    <input type="text" placeholder="小米8&nbsp;小米MIX 2S">
+        <div id="index">
+            <!-- banner -->
+            <div class="container">
+                <div class="banner row">
+                    <ul class="nav">
+                        <li v-for="cates in navCommoditys">
+                            <a>
+                                {{ cates.title }}
+                            </a>
+                            <div class="pop">
+                                <div class="nav-list" v-for="lists in cates.lists">
+                                    <!-- 这里添加链接 可传数据-commodity.name/imgUrl  -->
+                                    <a href="" v-for="commodity in lists.list">
+                                        <img :src="commodity.imgUrl" alt="">
+                                            <span>
+                                                {{ commodity.name }}
+                                            </span>
+                                        </img>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col col-md-3">
-                    <input type="submit" class="sousuo" value="搜索"/>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="index">
-    <!-- banner -->
-    <div class='container'>
-        <div class="banner row">
-            <ul class="nav">
-                <li v-for='cates in navCommoditys'>
-                    <a href="">{{ cates.title }}</a>
-                    <div class='pop'>
-                        <div class="nav-list" v-for='lists in cates.lists'>
-                            <a href="" v-for='commodity in lists.list'>
-                                <img :src="commodity.imgUrl" alt="">
-                                <span>{{ commodity.name }}</span>
+                <!-- banner下的图片 -->
+                <div class="sub_banner row">
+                    <div class="sidebar col-md-3">
+                        <div class="sidebar-item">
+                            <a href="JavaScript:;;">
+                                <img src="./image/hjh_01.gif"/>
+                            </a>
+                        </div>
+                        <div class="sidebar-item">
+                            <a href="JavaScript:;;">
+                                <img src="./image/hjh_02.gif"/>
+                            </a>
+                        </div>
+                        <div class="sidebar-item">
+                            <a href="JavaScript:;;">
+                                <img src="./image/hjh_07.gif"/>
+                            </a>
+                        </div>
+                        <div class="sidebar-item">
+                            <a href="JavaScript:;;">
+                                <img src="./image/hjh_04.gif"/>
+                            </a>
+                        </div>
+                        <div class="sidebar-item">
+                            <a href="JavaScript:;;">
+                                <img src="./image/hjh_05.gif"/>
+                            </a>
+                        </div>
+                        <div class="sidebar-item">
+                            <a href="JavaScript:;;">
+                                <img src="./image/hjh_06.gif"/>
                             </a>
                         </div>
                     </div>
-                </li>
-            </ul>
-        </div>
-        <!-- banner下的图片 -->
-        <div class="sub_banner row">
-            <div class="sidebar col-md-3">
-                <div class="sidebar-item"><a href="JavaScript:;;"><img src="./image/hjh_01.gif"></a></div>
-                <div class="sidebar-item"><a href="JavaScript:;;"><img src="./image/hjh_02.gif"></a></div>
-                <div class="sidebar-item"><a href="JavaScript:;;"><img src="./image/hjh_07.gif"></a></div>
-                <div class="sidebar-item"><a href="JavaScript:;;"><img src="./image/hjh_04.gif"></a></div>
-                <div class="sidebar-item"><a href="JavaScript:;;"><img src="./image/hjh_05.gif"></a></div>
-                <div class="sidebar-item"><a href="JavaScript:;;"><img src="./image/hjh_06.gif"></a></div>
-            </div>
-            <div class="col-md-3">
-                <a href="JavaScript:;;"><img src="./image/mi-bottom1.jpg" alt=""></a>
-            </div>
-            <div class="col-md-3">
-                <a href="JavaScript:;;"><img src="./image/mi-bottom2.jpg" alt=""></a>
-            </div>
-            <div class="col-md-3">
-                <a href="JavaScript:;;"><img src="./image/mi-bottom3.jpg" alt=""></a>
-            </div>
-        </div>
-        <div class="banner-bottom"></div>
-    </div>
-    <div class="page-main">
-        <div class="container">
-            <div v-for='cates in mainCommoditys'>
-                <div class="title">{{cates.title}}</div>
-                <div class="row">
-                    <div class="col" v-for='lists in cates.list1'>
-                        <div class='img-height' v-if='lists.type==1'>
-                            <a href="JavaScript:;;"><img :src="lists.imgUrl"></a>
-                        </div>
-                        <div v-if='lists.type==2' class="height-100">
-                            <div class="commodity-item">
-                                <a href="">
-                                    <div><img :src="lists.imgUrl"></div>
-                                    <div class="name">{{lists.name}}</div>
-                                    <div class="dec">{{lists.dec}}</div>
-                                    <div class="price">{{lists.price}}元 </div>
-                                    <div class="comment">
-                                        <div>{{lists.comment}}</div>
-                                        <div class='from'>来至于 {{lists.commentator}} 的评价</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="col-md-3">
+                        <a href="JavaScript:;;">
+                            <img alt="" src="./image/mi-bottom1.jpg"/>
+                        </a>
                     </div>
-                    <div class="w-100"></div>
-                    <div class="col" v-for='lists in cates.list2'>
-                        <div v-if='lists.type==1'>
-                            <a href="JavaScript:;;"><img :src="lists.imgUrl"></a>
+                    <div class="col-md-3">
+                        <a href="JavaScript:;;">
+                            <img alt="" src="./image/mi-bottom2.jpg"/>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="JavaScript:;;">
+                            <img alt="" src="./image/mi-bottom3.jpg"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-bottom">
+                </div>
+            </div>
+            <div class="page-main">
+                <div class="container">
+                    <div v-for="cates in mainCommoditys">
+                        <div class="title">
+                            {{cates.title}}
                         </div>
-                        <div v-if='lists.type==2'>
-                            <div class="commodity-item">
-                                <a href="">
-                                    <div><img :src="lists.imgUrl"></div>
-                                    <div class="name">{{lists.name}}</div>
-                                    <div class="dec">{{lists.dec}}</div>
-                                    <div class="price">{{lists.price}}元 </div>
-                                    <div class="comment">
-                                        <div>{{lists.comment}}</div>
-                                        <div class='from'>来至于 {{lists.commentator}} 的评价</div>
+                        <div class="row">
+                            <div class="col" v-for="lists in cates.list1">
+                                <div class="img-height" v-if="lists.type==1">
+                                    <a href="JavaScript:;;">
+                                        <img :src="lists.imgUrl"/>
+                                    </a>
+                                </div>
+                                <div class="height-100" v-if="lists.type==2">
+                                    <div class="commodity-item">
+                                        <!-- 这里添加链接 可传数据-lists.name/imgUrl/dec/price -->
+                                        <a href="">
+                                            <div>
+                                                <img :src="lists.imgUrl"/>
+                                            </div>
+                                            <div class="name">
+                                                {{lists.name}}
+                                            </div>
+                                            <div class="dec">
+                                                {{lists.dec}}
+                                            </div>
+                                            <div class="price">
+                                                {{lists.price}}元
+                                            </div>
+                                            <div class="comment">
+                                                <div>
+                                                    {{lists.comment}}
+                                                </div>
+                                                <div class="from">
+                                                    来至于 {{lists.commentator}} 的评价
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
+                                </div>
                             </div>
+                            <div class="w-100">
+                            </div>
+                            <div class="col" v-for="lists in cates.list2">
+                                <div v-if="lists.type==1">
+                                    <a href="JavaScript:;;">
+                                        <img :src="lists.imgUrl"/>
+                                    </a>
+                                </div>
+                                <div v-if="lists.type==2">
+                                    <div class="commodity-item">
+                                        <!-- 这里添加链接 可传数据-lists.name/imgUrl/dec/price  -->
+                                        <a href="">
+                                            <div>
+                                                <img :src="lists.imgUrl"/>
+                                            </div>
+                                            <div class="name">
+                                                {{lists.name}}
+                                            </div>
+                                            <div class="dec">
+                                                {{lists.dec}}
+                                            </div>
+                                            <div class="price">
+                                                {{lists.price}}元
+                                            </div>
+                                            <div class="comment">
+                                                <div>
+                                                    {{lists.comment}}
+                                                </div>
+                                                <div class="from">
+                                                    来至于 {{lists.commentator}} 的评价
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-img">
+                            <img :src="cates.bottomImg" alt=""/>
                         </div>
                     </div>
                 </div>
-                <div class='main-img'><img :src="cates.bottomImg" alt=""></div>
             </div>
         </div>
-    </div>
-</div>
-<footer>
-    <div>小米商城|MIUI|米聊|多看书城|小米路由器|视频电话|小米天猫店|小米淘宝直营店|小米网盟|小米移动|隐私政策|Select Region</div>
-    <div>©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号</div>
-    <div>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</div>
-</footer>
-</body>
+        <footer>
+            <div>
+                小米商城|MIUI|米聊|多看书城|小米路由器|视频电话|小米天猫店|小米淘宝直营店|小米网盟|小米移动|隐私政策|Select Region
+            </div>
+            <div>
+                ©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号
+            </div>
+            <div>
+                违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+            </div>
+        </footer>
+    </body>
 </html>
 <script>
     // 初始化
@@ -191,4 +393,23 @@
             mainCommoditys: mainCommoditys,
         },
     });
+    // 生成默认用户1001
+    function createDefaultUser() {
+        var data = {
+            id: '999999999',
+            name: '1001',
+            password: '1001',
+        }
+        UserDao.replaceUser(data, function(success) {
+            if (success) console.log('保存成功');
+        })
+    }
+    function loadUserInfo(name) {
+        // 传入用户名name
+        UserDao.loadUserInfoByName(name, function(success, res) {
+            console.log('用户' + name + '的信息', res);
+            // 存在该用户就可以返回该用户信息
+            // 不存在则返回空
+        })
+    }
 </script>
