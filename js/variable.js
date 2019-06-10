@@ -1109,3 +1109,23 @@ var mainCommoditys = [{
         commentator: '刘一祯',
     }],
 }]
+// 购物车初始数据
+var carts = [{
+    num: 1,
+    name: '小米电视4A 32英寸',
+    price: '3399',
+    img: './image/nav-80-221.jpg',
+    selected: true,
+}, {
+    num: 2,
+    name: '小米9',
+    price: '3299',
+    img: './image/nav-80-111.png',
+    selected: false,
+}, {
+    num: 1,
+    name: '小米USB充电器（4口）',
+    price: '59',
+    img: './image/nav-80-211.jpg',
+    selected: true,
+}]

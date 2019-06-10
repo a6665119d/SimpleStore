@@ -38,7 +38,7 @@
                 <div class="col">小计</div>
                 <div class="col">操作</div>
             </div>
-            <div v-for='commodity in carts'>
+            <div v-for='(commodity,index) in carts'>
                 <div class="row list-item">
                     <div class="col check"><input type="checkbox" class="check-box"></div>
                     <div class="col"><div class="item-img"><img :src="commodity.img" alt=""></div></div>
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div class="col"><span>{{commodity.price*commodity.num}}</span>元</div>
-                    <div class="col">X</div>
+                    <div class="col delete" @click="deleteCommodity(index)">X</div>
                 </div>
                 <!-- <div class="row list-item">
                     <div class="col check"><input type="checkbox" class="check-box"></div>
@@ -96,19 +96,7 @@
     const cart = new Vue({
         el: '#cart',
         data: {
-            carts: [{
-                id: '1001',
-                num: 1,
-                name: '小米USB充电器（4口）',
-                price: '59',
-                img: './image/nav-80-211.jpg',
-            },{
-                id: '1001',
-                num: 1,
-                name: '小米USB充电器（4口）',
-                price: '59',
-                img: './image/nav-80-211.jpg',
-            }]
+            carts: carts
         },
         computed: {
             totalCarts() {
@@ -116,10 +104,15 @@
                     return sum + commodity.num * commodity.price;
                 }, 0)
             },
-            totalNums(){
+            totalNums() {
                 return this.carts.reduce((sum, commodity) => {
                     return sum + commodity.num;
                 }, 0)
+            }
+        },
+        methods: {
+            deleteCommodity: function(index) {
+                this.carts.splice(index, 1);
             }
         }
     })
