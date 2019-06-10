@@ -86,40 +86,40 @@ var navCommoditys = [{
         // 第一列
         list: [{
             id: '20011',
-            name: '电视',
+            name: '小米壁画电视 65英寸',
             imgUrl: './image/nav-80-211.jpg',
-            price: '3299',
+            price: '3599',
         }, {
             id: '20012',
-            name: '小米8 青春版',
+            name: '米家激光投影电视',
             imgUrl: './image/nav-80-212.jpg',
-            price: '2299',
+            price: '3499',
         }, {
             id: '20013',
-            name: '小米8 屏幕指纹版',
+            name: '小米壁画电视 65英寸',
             imgUrl: './image/nav-80-213.jpg',
-            price: '2599',
+            price: '4399',
         }, {
             id: '20014',
-            name: '小米8',
+            name: '小米全面屏电视',
             imgUrl: './image/nav-80-214.jpg',
-            price: '2899',
+            price: '8699',
         }]
     }, {
         // 第二列
         list: [{
             id: '20021',
-            name: '小米MIX 3',
+            name: '小米电视4A 32英寸',
             imgUrl: './image/nav-80-221.jpg',
-            price: '3299',
+            price: '3399',
         }, {
             id: '20022',
-            name: '小米6X',
+            name: '小米电视4A 43英寸青春版',
             imgUrl: './image/nav-80-222.jpg',
             price: '2299',
         }, {
             id: '20023',
-            name: '黑鲨游戏手机Helo',
+            name: '小米电视4A 49英寸',
             imgUrl: './image/nav-80-223.jpg',
             price: '2599',
         }]
@@ -127,12 +127,12 @@ var navCommoditys = [{
         // 第三列
         list: [{
             id: '20031',
-            name: '红米6 Pro',
+            name: '小米电视4A 50英寸',
             imgUrl: './image/nav-80-231.jpg',
             price: '3299',
         }, {
             id: '20032',
-            name: '红米6',
+            name: '小米电视4A 55英寸',
             imgUrl: './image/nav-80-232.jpg',
             price: '2299',
         }]
@@ -142,75 +142,55 @@ var navCommoditys = [{
     lists: [{
         // 第一列
         list: [{
-            id: '10011',
-            name: '小米9',
-            imgUrl: './image/nav-80-111.png',
-            price: '3299',
+            id: '20011',
+            name: '小米笔记本 17.3"',
+            imgUrl: './image/nav-80-311.jpg',
+            price: '5699',
         }, {
-            id: '10012',
-            name: '小米MIX 3',
-            imgUrl: './image/nav-80-112.png',
-            price: '2299',
+            id: '20012',
+            name: '小米笔记本 15.6"',
+            imgUrl: './image/nav-80-312.jpg',
+            price: '5499',
         }, {
-            id: '10013',
-            name: '小米8 屏幕指纹版',
-            imgUrl: './image/nav-80-113.png',
-            price: '2599',
+            id: '20013',
+            name: '小米笔记本 13.3"',
+            imgUrl: './image/nav-80-313.jpg',
+            price: '6599',
         }, {
-            id: '10014',
-            name: '小米8',
-            imgUrl: './image/nav-80-114.png',
-            price: '2899',
-        }, {
-            id: '10015',
-            name: '小米8 SE',
-            imgUrl: './image/nav-80-115.png',
-            price: '2299',
-        }, {
-            id: '10016',
-            name: '小米8 青春版',
-            imgUrl: './image/nav-80-116.png',
-            price: '2299',
+            id: '20014',
+            name: '小米笔记本 12.5"',
+            imgUrl: './image/nav-80-314.jpg',
+            price: '5899',
         }]
     }, {
         // 第二列
         list: [{
-            id: '10021',
-            name: '小米MIX 3',
-            imgUrl: './image/nav-80-121.png',
-            price: '3299',
+            id: '20021',
+            name: 'RedmiBook 14',
+            imgUrl: './image/nav-80-221.jpg',
+            price: '2199',
         }, {
-            id: '10022',
-            name: '小米6X',
-            imgUrl: './image/nav-80-122.png',
-            price: '2299',
+            id: '20022',
+            name: '小米游戏本',
+            imgUrl: './image/nav-80-222.jpg',
+            price: '7799',
         }, {
-            id: '10023',
-            name: '黑鲨游戏手机Helo',
-            imgUrl: './image/nav-80-123.png',
-            price: '2599',
-        }, {
-            id: '10024',
-            name: '黑鲨游戏手机',
-            imgUrl: './image/nav-80-124.png',
-            price: '2899',
-        }, {
-            id: '10025',
-            name: '红米Note 7',
-            imgUrl: './image/nav-80-125.png',
-            price: '2299',
+            id: '20023',
+            name: '小米平板4',
+            imgUrl: './image/nav-80-223.jpg',
+            price: '5499',
         }]
     }, {
         // 第三列
         list: [{
-            id: '10031',
-            name: '红米6 Pro',
-            imgUrl: './image/nav-80-131.png',
-            price: '3299',
+            id: '20031',
+            name: '键盘',
+            imgUrl: './image/nav-80-231.jpg',
+            price: '399',
         }, {
-            id: '10032',
-            name: '红米6',
-            imgUrl: './image/nav-80-132.png',
+            id: '20032',
+            name: '小米壁画电视 65英寸',
+            imgUrl: './image/nav-80-232.jpg',
             price: '2299',
         }]
     }]

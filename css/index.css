@@ -68,7 +68,7 @@
     line-height: 40px;
     font-size: 14px;
     padding: 0 30px;
-    color: #fff;
+    color: #fff !important;
     text-align: left;
 }
 .nav li>a:hover{
