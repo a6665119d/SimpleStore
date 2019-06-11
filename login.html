@@ -9,6 +9,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/variable.js"></script>
+    <script src="js/vue.js"></script>
     <script src="js/dbInit.js"></script>
     <script src="js/init.js"></script>
     <script src="js/dao.js"></script>
@@ -26,17 +27,17 @@
     <div class="container-fluid" id="background">
     	<div class="row" id="centerRow">
             <div class="col-md-9" id="loginmodal">
-            	<form id="loginForm">
+            	<form id="loginForm" onsubmit='return false'>
                    <div class="form-group">
                       <label for="exampleInputEmail1" class="title">用户名</label>
-                      <input  class="form-control" id="userName" placeholder="用户名">
+                      <input  class="form-control" id="userName" placeholder="用户名" v-model="this.userName">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1" class="title">密码</label>
-                      <input type="password" class="form-control" id="password" placeholder="密码">
+                      <input type="password" class="form-control" id="password" placeholder="密码"  v-model="this.password">
                     </div>
-                   <button type="submit" class="btn btn-default" id="loginBut">登录</button>
-                   <button type="submit" class="btn btn-default" id="regBut">注册</button>
+                   <button type="submit" class="btn btn-default" id="loginBut" @click="login(this.userName,this.password)">登录</button>
+                   <button type="submit" class="btn btn-default" id="regBut" @click="reg(this.userName,this.password)">注册</button>
                 </form>
             </div>
         </div>
@@ -50,4 +51,34 @@
 </body>
 </html>
 <script>
+     function init(){
+        initDataBase(); // 生成数据库
+        createDefaultUser();
+    };
+
+     const index = new Vue({
+             el: '#background',
+             data: {
+                 userName: '',
+                 password: '',
+             },
+        methods:{
+           login:function(userName,password){
+            console.log(userName);
+            console.log(password);
+              if(userName === '1001' && password === '1001'){
+                alert('登录成功');
+                location.href = './index.html';
+              }
+              else{
+                alert('账号或密码错误!');
+                location.reload();
+              }
+           },
+           reg:function(userName,password){
+              alert('注册成功');
+              location.reload();
+           }
+        }
+    });
 </script>
