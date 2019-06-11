@@ -11,7 +11,7 @@ function initFGdb() {
 		tx.executeSql('CREATE TABLE IF NOT EXISTS [user] (id VARCHAR2(32) PRIMARY KEY NOT NULL, name VARCHAR2(32), password VARCHAR2(32),phone VARCHAR2(32),  remark VARCHAR2(32), define VARCHAR2(32))');
         tx.executeSql('CREATE TABLE IF NOT EXISTS [loginUser] (id VARCHAR2(32) PRIMARY KEY NOT NULL,userId VARCHAR2(32), name VARCHAR2(32), status int(11))');
         tx.executeSql('CREATE TABLE IF NOT EXISTS [details] (id VARCHAR2(32) PRIMARY KEY NOT NULL,name VARCHAR2(32), price VARCHAR2(32), img VARCHAR2(32), image VARCHAR2(32))');
-        tx.executeSql('CREATE TABLE IF NOT EXISTS [carts] (id VARCHAR2(32) PRIMARY KEY NOT NULL,name VARCHAR2(32), price VARCHAR2(32), img VARCHAR2(32), image VARCHAR2(32),userId VARCHAR2(32), userName VARCHAR2(32),)');
+        tx.executeSql('CREATE TABLE IF NOT EXISTS [carts] (id VARCHAR2(32) PRIMARY KEY NOT NULL,name VARCHAR2(32), price VARCHAR2(32), img VARCHAR2(32), image VARCHAR2(32),userId VARCHAR2(32), userName VARCHAR2(32), num int(11),status int(11), selected VARCHAR2(32))');
 	}, function() {
         console.log('创建数据库成功!');
     }, function(err) {
@@ -28,6 +28,10 @@ function getBySql(sql, callBack) {
             item = getSqlItem(res);
             newData = item;
         }
+        if (res.rows.length > 1) {
+            item = getSqlItems(res);
+            newData = item;
+        }
         if (callBack) {
             callBack(true, newData);
         }
@@ -38,7 +42,24 @@ function getBySql(sql, callBack) {
         }
     });
 }
-
+function getBySqlMore(sql, callBack) {
+    fgDB.executeSql(sql, function(res) {
+        var item;
+        var newData;
+        if (res.rows.length >= 1) {
+            item = getSqlItems(res);
+            newData = item;
+        }
+        if (callBack) {
+            callBack(true, newData);
+        }
+    }, function(err) {
+        console.log('error with executeSql in getBySql:' + sql, err);
+        if (callBack) {
+            callBack(false, err);
+        }
+    });
+}
 function getSqlItem(res, index) {
     index = index ? index : 0;
     return res.rows.item(index);

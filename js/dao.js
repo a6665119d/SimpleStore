@@ -42,3 +42,21 @@ var DetailDao = {
         getBySql(sql,callback);
     },
 }
+/* 购物车 */
+var CartDao = {
+    // 新增或修改购物车信息
+    replaceCarts: function(data, callback){
+        var keys = Object.keys(data);
+        var values = Object.values(data);
+        var sql = "REPLACE INTO carts (" + keys.join(",") + ") VALUES ('" + values.join("','") + "')";
+        getBySql(sql,callback);
+    },
+    // 查询商品详情信息
+    loadCartsInfo: function(userId,callback){
+        var sql = "select * from carts where status=1 ";
+        if (userId) {
+            sql += "and userId = '" + userId + "'";
+        }
+        getBySqlMore(sql,callback);
+    },
+}

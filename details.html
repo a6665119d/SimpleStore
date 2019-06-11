@@ -190,16 +190,32 @@
         methods: {
             toShoppingCart: function(){
                 console.log(this.details);
-                // location.href = './cart.html';
-                // var item = {
-                //     num: 1,
-                //     name: name,
-                //     price: price,
-                //     img: img,
-                //     selected: true,
-                // };
-                // carts.push(item);
-            }
+                var userId = this.loginUser ? this.loginUser.userId : '6666';
+                var userName = this.loginUser ? this.loginUser.name : '6666';
+                var carts = {
+                    id: createOnlyId(),
+                    userId: userId,
+                    userName: userName,
+                    name: this.details.name,
+                    price: this.details.price,
+                    img: this.details.img,
+                    num: 1,
+                    status: 1,
+                    selected: true,
+                };
+                CartDao.replaceCarts(carts, function(success) {
+                    location.href = './cart.html';
+                })
+            },
+            signOut: function(){
+                var signOutInfo = {
+                    id: '888888888',
+                    status: 0,
+                }
+                UserDao.replaceLoginUser(signOutInfo, function(success) {
+                    location.href = './login.html';
+                })
+            },
         }
     });
 </script>

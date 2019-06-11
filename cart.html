@@ -96,7 +96,24 @@
     const cart = new Vue({
         el: '#cart',
         data: {
-            carts: carts
+            carts: carts,
+            loginUser: '',
+            isDefault: true,
+        },
+        created: function(){
+            initDataBase();
+            var me = this;
+            UserDao.loadLoginUserInfo(function(success, loginInfo) {
+                me.loginUser = loginInfo;
+                var userId = '6666';
+                if (loginInfo) userId = loginInfo.userId;
+                CartDao.loadCartsInfo(userId, function(success, carts) {
+                    if (carts) {
+                        me.isDefault = false;
+                        me.carts = carts;
+                    }
+                });
+            });
         },
         computed: {
             totalCarts() {
@@ -112,11 +129,20 @@
         },
         methods: {
             deleteCommodity: function(index) {
-                this.carts.splice(index, 1);
+                var me = this;
+                if (me.isDefault) {
+                    me.carts.splice(index, 1);
+                } else {
+                    var detelCom = me.carts[index];
+                    detelCom.status = 9;
+                    CartDao.replaceCarts(detelCom, function(success) {
+                        me.carts.splice(index, 1);
+                    })
+                }
             },
             checkClick: function(index,view){
                console.log(index,view)
             }
-        }
+        },
     })
 </script>
