@@ -18,6 +18,7 @@
     <title>小米9</title>
 </head>
 <body>
+<div id='details'>
 <div class="header">
     <div class="container">
         <div class="row">
@@ -148,10 +149,11 @@
                     <p ><span id="column-name3">小米9 </span>全网通版 6GB+128GB 全息幻彩紫</p>
                     <h3 class="orange-color">总计: <span id="column-price3">2999</span>元</h3>
                 </div>
-                <div><a href="./shopping-cart.html"  class="btn-add">加入购物车</a></div>
+                <div><a @click="toShoppingCart()" class="btn-add">加入购物车</a></div>
             </div>
         </div>
     </div>
+</div>
 </div>
 <footer>
     <div>小米商城|MIUI|米聊|多看书城|小米路由器|视频电话|小米天猫店|小米淘宝直营店|小米网盟|小米移动|隐私政策|Select Region</div>
@@ -171,7 +173,8 @@
         return "";
     }
     var name = GetQueryString('name') || '小米9';
-    var price = GetQueryString('price');
+    var price = GetQueryString('price') || 3299;
+    var img = GetQueryString('img') || './image/nav-80-111.png';
     window.document.title = name;
     $('#column-name').text(name);
     $('#column-name2').text(name);
@@ -179,4 +182,25 @@
     $('#column-price').text(price);
     $('#column-price2').text(price);
     $('#column-price3').text(price);
+    const details = new Vue({
+        el: '#details',
+        data: {
+            name: '小米9',
+            price: 3299,
+            img: './image/nav-80-111.png',
+        },
+        methods: {
+            toShoppingCart: function(){
+                location.href = './shopping-cart.html';
+                var item = {
+                    num: 1,
+                    name: name,
+                    price: price,
+                    img: img,
+                    selected: true,
+                };
+                carts.push(item);
+            }
+        }
+    });
 </script>

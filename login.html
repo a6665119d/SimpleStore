@@ -17,17 +17,18 @@
     <title>小米商城--登陆</title>
 </head>
 <body>
-
-  <div class="top center">
-    <div class="logo center">
-      <a href="./index.html" target="_blank"><img src="./image/mistore_logo.png" alt=""></a>
+<div class="container">
+   <div class="top center">
+        <div class="logo center">
+          <a href="./index.html" target="_blank"><img src="./image/mistore_logo.png" alt=""></a>
+        </div>
     </div>
-  </div>
-
-    <div class="container-fluid" id="background">
-    	<div class="row" id="centerRow">
+</div>
+<div class="container-fluid" id="background">
+    <div class="container">
+        <div class="row" id="centerRow">
             <div class="col-md-9" id="loginmodal">
-            	<form id="loginForm" onsubmit='return false'>
+                <form id="loginForm" onsubmit='return false'>
                    <div class="form-group">
                       <label for="exampleInputEmail1" class="title">用户名</label>
                       <input  class="form-control" id="userName" placeholder="用户名" v-model="this.userName">
@@ -37,13 +38,13 @@
                       <input type="password" class="form-control" id="password" placeholder="密码"  v-model="this.password">
                     </div>
                    <button type="submit" class="btn btn-default" id="loginBut" @click="login(this.userName,this.password)">登录</button>
-                   <button type="submit" class="btn btn-default" id="regBut" @click="reg(this.userName,this.password)">注册</button>
+                   <button type="submit" class="btn btn-default" id="regBut" @click="reg()">注册</button>
                 </form>
             </div>
         </div>
     </div>
-
-    <footer>
+</div>
+<footer>
     <div>小米商城|MIUI|米聊|多看书城|小米路由器|视频电话|小米天猫店|小米淘宝直营店|小米网盟|小米移动|隐私政策|Select Region</div>
     <div>©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号</div>
     <div>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</div>
@@ -51,34 +52,72 @@
 </body>
 </html>
 <script>
-     function init(){
-        initDataBase(); // 生成数据库
-        createDefaultUser();
-    };
-
      const index = new Vue({
-             el: '#background',
-             data: {
-                 userName: '',
-                 password: '',
+         el: '#background',
+         data: {
+             userName: '',
+             password: '',
+         },
+         created: function(){
+            initDataBase();
+         },
+         methods: {
+             login: function(userName, password) {
+                 console.log(userName, password);
+                 if (!userName || !password) {
+                    alert('请输入用户名和密码');
+                    return;
+                }
+                UserDao.loadUserInfoByName(userName, function(success, res) {
+                    if (res) {
+                        if (res.password != password) {
+                            alert('密码错误，请重新输入！');
+                            return;
+                        } else if (res.password == password) {
+                            alert('登录成功');
+                            location.href = './index.html';
+                        }
+                    } else {
+                        alert('该用户不存在！请先注册');
+                        return;
+                    }
+                })
+                 // if (userName === '1001' && password === '1001') {
+                 //     alert('登录成功');
+                 //     location.href = './index.html';
+                 // } else {
+                 //     alert('账号或密码错误!');
+                 //     location.reload();
+                 // }
              },
-        methods:{
-           login:function(userName,password){
-            console.log(userName);
-            console.log(password);
-              if(userName === '1001' && password === '1001'){
-                alert('登录成功');
-                location.href = './index.html';
-              }
-              else{
-                alert('账号或密码错误!');
-                location.reload();
-              }
-           },
-           reg:function(userName,password){
-              alert('注册成功');
-              location.reload();
-           }
-        }
-    });
+             reg: function() {
+                var userName = $('#userName').val();
+                var password = $('#password').val();
+                console.log(userName, password);
+                if (!userName || !password) {
+                    alert('请输入用户名和密码');
+                    return;
+                }
+                UserDao.loadUserInfoByName(userName, function(success, res) {
+                    if (!success) {
+                        alert('注册失败！');
+                        return;
+                    }
+                    if (res) {
+                        alert('注册失败！该用户已存在');
+                        return;
+                    }
+                    var data = {
+                        id: createOnlyId(),
+                        name: userName,
+                        password: password,
+                    }
+                    UserDao.replaceUser(data, function(success) {
+                        if (success) alert('注册成功');
+                        location.reload();
+                    })
+                })
+             }
+         }
+     });
 </script>

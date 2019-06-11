@@ -84,12 +84,13 @@
 .btn-add{
     background: #ff6700;
     border-color: #ff6700;
-    color: #fff;
+    color: #fff !important;
     width: 298px;
     height: 52px;
     line-height: 52px;
     font-size: 16px;
 }
 .btn-add:hover{
-    color: #fff;
+    background-color: #f25807;
+    border-color: #f25807;
 }

@@ -40,7 +40,7 @@
             </div>
             <div v-for='(commodity,index) in carts'>
                 <div class="row list-item">
-                    <div class="col check"><input type="checkbox" class="check-box"></div>
+                    <div class="col check"><input type="checkbox" class="check-box" @click='checkClick(index, this)'></div>
                     <div class="col"><div class="item-img"><img :src="commodity.img" alt=""></div></div>
                     <div class="col col-md-3 name">{{commodity.name}}</div>
                     <div class="col"><span>{{commodity.price}}</span>元</div>
@@ -113,6 +113,9 @@
         methods: {
             deleteCommodity: function(index) {
                 this.carts.splice(index, 1);
+            },
+            checkClick: function(index,view){
+               console.log(index,view)
             }
         }
     })

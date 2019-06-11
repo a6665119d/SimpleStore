@@ -41,8 +41,8 @@
             <div class="col-md-4 header-right">
                 <div class="row">
                     <div class="col-md-2"></div>
-                    <div class="col-md-2"><a href="">登录</a></div>
-                    <div class="col-md-2"><a href="JavaScript:;;">注册</a></div>
+                    <div class="col-md-2"><a href="./login.html">登录</a></div>
+                    <div class="col-md-2"><a href="./login.html">注册</a></div>
                     <div class="col-md-3"><a href="JavaScript:;;">消息通知</a></div>
                     <div class="col-md-3"><a href="./shopping-cart.html">购物车</a></div>
                 </div>
@@ -92,7 +92,7 @@
                         <div class="nav-list" v-for='lists in cates.lists'>
                             <!-- 这里添加链接 可传数据-commodity.name/imgUrl  -->
                             <div v-for='commodity in lists.list'>
-                                <a :href="'./details.html?name='+commodity.name+'&price='+commodity.price+''">
+                                <a :href="'./details.html?name='+commodity.name+'&price='+commodity.price+'&img='+commodity.imgUrl+''">
                                     <img :src="commodity.imgUrl" alt="">
                                     <span>{{ commodity.name }}</span>
                                 </a>
@@ -196,23 +196,4 @@
             mainCommoditys: mainCommoditys,
         },
     });
-    // 生成默认用户1001
-    function createDefaultUser(){
-        var data ={
-            id: '999999999',
-            name: '1001',
-            password: '1001',
-        }
-        UserDao.replaceUser(data,function(success){
-            if(success) console.log('保存成功');
-        })
-    }
-    function loadUserInfo() {
-        // 传入用户名name
-        UserDao.loadUserInfoByName(name, function(success, res) {
-            console.log('用户' + name + '的信息', res);
-            // 存在该用户就可以返回该用户信息
-            // 不存在则返回空
-        })
-    }
 </script>
