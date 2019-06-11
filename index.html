@@ -216,12 +216,14 @@
                 })
             },
             toDetails: function(commodity) {
+                // var image = 'image/detail-main1.jpg'
+                // if(commodity.dec) image = commodity.imgUrl;
                 var signOutInfo = {
                     id: '777777777',
                     name: commodity.name,
                     price: commodity.price,
                     img: commodity.imgUrl,
-                    image: 'image/detail-main1.jpg'
+                    image: commodity.imgUrl,
                 }
                 DetailDao.replaceDetails(signOutInfo, function(success) {
                     location.href = 'details.html';

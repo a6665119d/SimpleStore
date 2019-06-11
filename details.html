@@ -92,7 +92,7 @@
                 <div class="row">
                     <div class="col"></div>
                     <!-- 点击跳转概述页面    -->
-                    <div class="col-md-2"><a href="">概述</a></div>
+                    <div class="col-md-2"><a href="JavaScript:;;">概述</a></div>
                     <div class="col-md-2"><a href="JavaScript:;;">参数</a></div>
                     <div class="col-md-2"><a href="JavaScript:;;">F码通道</a></div>
                     <div class="col-md-2"><a href="JavaScript:;;">用户评价</a></div>
@@ -189,15 +189,16 @@
         },
         methods: {
             toShoppingCart: function(){
-                location.href = './cart.html';
-                var item = {
-                    num: 1,
-                    name: name,
-                    price: price,
-                    img: img,
-                    selected: true,
-                };
-                carts.push(item);
+                console.log(this.details);
+                // location.href = './cart.html';
+                // var item = {
+                //     num: 1,
+                //     name: name,
+                //     price: price,
+                //     img: img,
+                //     selected: true,
+                // };
+                // carts.push(item);
             }
         }
     });
