@@ -9,6 +9,7 @@ function initFGdb() {
 	fgDB.transaction(function(tx) {
         // 用户表
 		tx.executeSql('CREATE TABLE IF NOT EXISTS [user] (id VARCHAR2(32) PRIMARY KEY NOT NULL, name VARCHAR2(32), password VARCHAR2(32),phone VARCHAR2(32),  remark VARCHAR2(32), define VARCHAR2(32))');
+        tx.executeSql('CREATE TABLE IF NOT EXISTS [loginUser] (id VARCHAR2(32) PRIMARY KEY NOT NULL,userId VARCHAR2(32), name VARCHAR2(32), status int(11))');
 	}, function() {
         console.log('创建数据库成功!');
     }, function(err) {
@@ -212,7 +213,6 @@ var sqliteDB = function( db_name, size ) {
         transaction:function(fn, success, error) {
             var hookError = function(tx, e) {
                 console.log(tx.message);
-                showSqliteError(tx);
                 if(error) error(tx, e);
             };
             _db.transaction(fn, hookError,success);
