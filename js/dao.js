@@ -1,4 +1,5 @@
 // 数据库语句
+// 用户表
 var UserDao = {
     // data 对象{id:'111',name: '名字',password:'123'}
     // 新增或修改用户信息
@@ -26,3 +27,18 @@ var UserDao = {
         getBySql(sql,callback);
     },
 };
+/* 详情表 */
+var DetailDao = {
+    // 新增或修改登录商品详情信息
+    replaceDetails: function(data, callback){
+        var keys = Object.keys(data);
+        var values = Object.values(data);
+        var sql = "REPLACE INTO details (" + keys.join(",") + ") VALUES ('" + values.join("','") + "')";
+        getBySql(sql,callback);
+    },
+    // 查询商品详情信息
+    loadDetailsInfo: function(callback){
+        var sql = "select * from details";
+        getBySql(sql,callback);
+    },
+}

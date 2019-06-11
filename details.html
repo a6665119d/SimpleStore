@@ -47,7 +47,7 @@
                     <div class="col-md-2" v-if='!loginUser'><a href="./login.html">注册</a></div>
                     <div class="col-md-3"><a href="./order.html">我的订单</a></div>
                     <div class="col-md-3"><a href="JavaScript:;;">消息通知</a></div>
-                    <div class="col-md-2"><a href="./shopping-cart.html">购物车</a></div>
+                    <div class="col-md-2"><a href="./cart.html">购物车</a></div>
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@
 <div class="column search">
     <div class="container">
         <div class="row">
-            <div class='col column-name' id='column-name' >小米9</div>
+            <div class='col column-name'>{{ details.name }}</div>
             <div class='col other'>
                 <div class="row">
                     <div class="col"></div>
@@ -105,13 +105,13 @@
     <div class="container">
         <div class="row detail-main">
             <div class="col-md-6 detail-img">
-                <img src="./image/detail-main1.jpg">
+                <img :src="details.image">
             </div>
             <div class="col-md-6 right-style">
-                <h3 id='column-name2'>小米9</h3>
+                <h3>{{ details.name }}</h3>
                 <p><font class="orange-color">「6GB+128GB/8GB+256GB，限时赠价值149元无线充电宝，更享花呗3/6期免息」</font>全曲面轻薄设计，全息幻彩玻璃机身 /  骁龙855旗舰处理器 / 20W无线闪充，标配27W有线快充 / 索尼4800万超广角微距三摄 / 极速屏下指纹解锁 / 多功能NFC</p>
                 <p class="orange-color">小米自营</p>
-                <p class="orange-color"><font id="column-price">2999</font>元</p>
+                <p class="orange-color"><font>{{ details.price }}</font>元</p>
                 <div class='gift'>
                     <div><div class="btn">赠品</div>赠小米无线充电宝</div>
                     <div><div class="btn">赠品</div>赠米粉卡</div>
@@ -120,7 +120,7 @@
                 <div class="row">
                     <div class="col edition edition-sel">
                         <span>6GB+64GB</span>
-                        <span id="column-price2">2499</span>元
+                        <span>{{ details.price }}</span>元
                     </div>
                     <div class="col edition">
                         <span>8GB+128GB </span>
@@ -148,8 +148,8 @@
                     <div class="col"></div>
                 </div>
                 <div class='amout'>
-                    <p ><span id="column-name3">小米9 </span>全网通版 6GB+128GB 全息幻彩紫</p>
-                    <h3 class="orange-color">总计: <span id="column-price3">2999</span>元</h3>
+                    <p ><span>{{ details.name }} </span>全网通版 6GB+128GB 全息幻彩紫</p>
+                    <h3 class="orange-color">总计: <span>{{ details.price }}</span>元</h3>
                 </div>
                 <div><a @click="toShoppingCart()" class="btn-add">加入购物车</a></div>
             </div>
@@ -165,25 +165,6 @@
 </body>
 </html>
 <script>
-    var LocString = String(window.document.location.href);
-    function GetQueryString(name) {
-        var rs = new RegExp("(^|)" + name + "=([^&]*)(&|$)", "gi").exec(LocString),
-            tmp;
-        if (tmp = rs) {
-            return decodeURI(tmp[2]);
-        }
-        return "";
-    }
-    var name = GetQueryString('name') || '小米9';
-    var price = GetQueryString('price') || 3299;
-    var img = GetQueryString('img') || './image/nav-80-111.png';
-    window.document.title = name;
-    $('#column-name').text(name);
-    $('#column-name2').text(name);
-    $('#column-name3').text(name);
-    $('#column-price').text(price);
-    $('#column-price2').text(price);
-    $('#column-price3').text(price);
     const details = new Vue({
         el: '#details',
         data: {
@@ -191,7 +172,8 @@
             details: {
                 name: '小米9',
                 price: 3299,
-                img: './image/nav-80-111.png',
+                img: 'image/nav-80-111.png',
+                image: 'image/detail-main1.jpg',
             }
         },
         created: function(){
@@ -199,11 +181,15 @@
             var me = this;
             UserDao.loadLoginUserInfo(function(success, loginInfo) {
                 me.loginUser = loginInfo;
-            })
+            });
+            DetailDao.loadDetailsInfo(function(success, detailsInfo) {
+                me.details = detailsInfo;
+                window.document.title = detailsInfo.name;
+            });
         },
         methods: {
             toShoppingCart: function(){
-                location.href = './shopping-cart.html';
+                location.href = './cart.html';
                 var item = {
                     num: 1,
                     name: name,

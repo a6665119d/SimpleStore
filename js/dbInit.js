@@ -10,6 +10,7 @@ function initFGdb() {
         // 用户表
 		tx.executeSql('CREATE TABLE IF NOT EXISTS [user] (id VARCHAR2(32) PRIMARY KEY NOT NULL, name VARCHAR2(32), password VARCHAR2(32),phone VARCHAR2(32),  remark VARCHAR2(32), define VARCHAR2(32))');
         tx.executeSql('CREATE TABLE IF NOT EXISTS [loginUser] (id VARCHAR2(32) PRIMARY KEY NOT NULL,userId VARCHAR2(32), name VARCHAR2(32), status int(11))');
+        tx.executeSql('CREATE TABLE IF NOT EXISTS [details] (id VARCHAR2(32) PRIMARY KEY NOT NULL,name VARCHAR2(32), price VARCHAR2(32), img VARCHAR2(32), image VARCHAR2(32))');
 	}, function() {
         console.log('创建数据库成功!');
     }, function(err) {
